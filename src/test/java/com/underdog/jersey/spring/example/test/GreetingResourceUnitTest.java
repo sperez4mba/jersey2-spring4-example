@@ -1,9 +1,7 @@
 package com.underdog.jersey.spring.example.test;
 
-import com.underdog.jersey.spring.example.resource.GreetingResource;
-import com.underdog.jersey.spring.example.service.GreetingService;
+import static org.junit.Assert.assertEquals;
 import javax.ws.rs.core.Response;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -14,7 +12,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import static org.junit.Assert.*;
+import com.underdog.jersey.spring.example.resource.GreetingResource;
+import com.underdog.jersey.spring.example.resource.GreetingResourceImpl;
+import com.underdog.jersey.spring.example.service.GreetingService;
 
 /**
  *
@@ -38,7 +38,7 @@ public class GreetingResourceUnitTest {
 
         @Bean
         public GreetingResource greetingResource() {
-            return new GreetingResource();
+            return new GreetingResourceImpl();
         }
 
         @Bean
