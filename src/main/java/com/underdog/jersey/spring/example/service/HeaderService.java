@@ -13,5 +13,5 @@ import java.util.Map;
  * @author PaulSamsotha
  */
 public interface HeaderService {
-    public Map<String, String> getHeaders();
+    Map<String, String> getHeaders();
 }

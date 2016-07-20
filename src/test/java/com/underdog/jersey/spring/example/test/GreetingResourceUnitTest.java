@@ -30,7 +30,7 @@ public class GreetingResourceUnitTest {
     @Test
     public void testGetGreeting() {
         Response response = greetingResource.getGreeting("peeskillet");
-        assertEquals("Hello peeskillet", (String) response.getEntity());
+        assertEquals("Hello peeskillet", response.getEntity());
     }
 
     @Configuration
