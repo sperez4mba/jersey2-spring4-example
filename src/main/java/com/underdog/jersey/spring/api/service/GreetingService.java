@@ -1,5 +1,5 @@
 
-package com.underdog.jersey.spring.example.service;
+package com.underdog.jersey.spring.api.service;
 
 /**
  *

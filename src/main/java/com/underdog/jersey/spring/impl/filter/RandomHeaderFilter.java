@@ -1,7 +1,6 @@
 
-package com.underdog.jersey.spring.example.filter;
+package com.underdog.jersey.spring.impl.filter;
 
-import com.underdog.jersey.spring.example.service.HeaderService;
 import java.io.IOException;
 import java.util.Map;
 import javax.ws.rs.container.ContainerRequestContext;
@@ -10,6 +9,7 @@ import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.ext.Provider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import com.underdog.jersey.spring.api.service.HeaderService;
 
 /**
  *

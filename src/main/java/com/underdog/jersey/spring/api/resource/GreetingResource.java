@@ -1,4 +1,4 @@
-package com.underdog.jersey.spring.example.resource;
+package com.underdog.jersey.spring.api.resource;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

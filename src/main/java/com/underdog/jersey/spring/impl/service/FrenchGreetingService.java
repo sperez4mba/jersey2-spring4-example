@@ -1,7 +1,8 @@
 
-package com.underdog.jersey.spring.example.service;
+package com.underdog.jersey.spring.impl.service;
 
 import org.springframework.stereotype.Service;
+import com.underdog.jersey.spring.api.service.GreetingService;
 
 /**
  *

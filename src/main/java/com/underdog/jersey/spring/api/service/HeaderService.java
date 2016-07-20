@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.underdog.jersey.spring.example.service;
+package com.underdog.jersey.spring.api.service;
 
 import java.util.Map;
 

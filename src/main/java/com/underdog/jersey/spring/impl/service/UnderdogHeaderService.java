@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 
-package com.underdog.jersey.spring.example.service;
+package com.underdog.jersey.spring.impl.service;
 
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import com.underdog.jersey.spring.api.service.HeaderService;
 
 /**
  *

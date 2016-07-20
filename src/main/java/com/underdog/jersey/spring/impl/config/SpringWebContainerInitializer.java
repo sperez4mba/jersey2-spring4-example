@@ -1,5 +1,5 @@
 
-package com.underdog.jersey.spring.example.config;
+package com.underdog.jersey.spring.impl.config;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

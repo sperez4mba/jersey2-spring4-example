@@ -1,10 +1,11 @@
 
-package com.underdog.jersey.spring.example.resource;
+package com.underdog.jersey.spring.impl.resource;
 
 import javax.ws.rs.core.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import com.underdog.jersey.spring.example.service.GreetingService;
+import com.underdog.jersey.spring.api.resource.GreetingResource;
+import com.underdog.jersey.spring.api.service.GreetingService;
 
 /**
  * @author PaulSamsotha

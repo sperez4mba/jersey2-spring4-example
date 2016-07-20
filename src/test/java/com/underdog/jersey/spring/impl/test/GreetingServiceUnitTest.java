@@ -1,14 +1,14 @@
 
-package com.underdog.jersey.spring.example.test;
+package com.underdog.jersey.spring.impl.test;
 
-import com.underdog.jersey.spring.example.config.SpringAppConfiguration;
-import com.underdog.jersey.spring.example.service.GreetingService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import com.underdog.jersey.spring.api.service.GreetingService;
+import com.underdog.jersey.spring.impl.config.SpringAppConfiguration;
 
 /**
  *

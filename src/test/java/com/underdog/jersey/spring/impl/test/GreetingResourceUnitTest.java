@@ -1,4 +1,4 @@
-package com.underdog.jersey.spring.example.test;
+package com.underdog.jersey.spring.impl.test;
 
 import static org.junit.Assert.assertEquals;
 import javax.ws.rs.core.Response;
@@ -12,9 +12,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import com.underdog.jersey.spring.example.resource.GreetingResource;
-import com.underdog.jersey.spring.example.resource.GreetingResourceImpl;
-import com.underdog.jersey.spring.example.service.GreetingService;
+import com.underdog.jersey.spring.api.resource.GreetingResource;
+import com.underdog.jersey.spring.api.service.GreetingService;
+import com.underdog.jersey.spring.impl.resource.GreetingResourceImpl;
 
 /**
  *

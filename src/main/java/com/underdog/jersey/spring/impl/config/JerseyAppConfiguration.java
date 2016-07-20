@@ -1,6 +1,7 @@
 
-package com.underdog.jersey.spring.example.config;
+package com.underdog.jersey.spring.impl.config;
 
+import java.time.Instant;
 import javax.servlet.ServletContext;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Context;
@@ -21,7 +22,7 @@ public class JerseyAppConfiguration extends ResourceConfig {
     public void post_construct(ServletContext servletContext) {
         WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
         packages("com.underdog.jersey.spring.example");
-        System.out.println("yay");
+        System.out.println("yay at " + Instant.now());
     }
 
 }

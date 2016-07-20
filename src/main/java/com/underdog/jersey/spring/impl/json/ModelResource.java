@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.underdog.jersey.spring.example.json;
+package com.underdog.jersey.spring.impl.json;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
