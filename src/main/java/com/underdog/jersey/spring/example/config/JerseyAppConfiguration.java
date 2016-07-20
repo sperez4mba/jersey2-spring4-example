@@ -1,8 +1,12 @@
 
 package com.underdog.jersey.spring.example.config;
 
+import javax.servlet.ServletContext;
 import javax.ws.rs.ApplicationPath;
+import javax.ws.rs.core.Context;
 import org.glassfish.jersey.server.ResourceConfig;
+import org.springframework.web.context.WebApplicationContext;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 /**
  * @author PaulSamsotha
@@ -11,6 +15,13 @@ import org.glassfish.jersey.server.ResourceConfig;
 public class JerseyAppConfiguration extends ResourceConfig {
 
     public JerseyAppConfiguration() {
-        packages("com.underdog.jersey.spring.example");
     }
+
+    @Context
+    public void post_construct(ServletContext servletContext) {
+        WebApplicationContext webApplicationContext = WebApplicationContextUtils.getWebApplicationContext(servletContext);
+        packages("com.underdog.jersey.spring.example");
+        System.out.println("yay");
+    }
+
 }
