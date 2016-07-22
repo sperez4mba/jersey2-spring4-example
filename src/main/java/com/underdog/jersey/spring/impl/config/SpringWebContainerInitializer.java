@@ -1,8 +1,11 @@
 
 package com.underdog.jersey.spring.impl.config;
 
+import java.util.logging.LogManager;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import org.slf4j.bridge.SLF4JBridgeHandler;
+import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -13,11 +16,14 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
  *
  * @author PaulSamsotha
  */
-@Order(1)
+@Order(Ordered.HIGHEST_PRECEDENCE)
 public class SpringWebContainerInitializer implements WebApplicationInitializer {
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
+        LogManager.getLogManager().reset();
+        SLF4JBridgeHandler.install();
+
         registerContextLoaderListener(servletContext);
         
         // Set the Jersey used property to it won't load a ContextLoaderListener
@@ -30,11 +36,12 @@ public class SpringWebContainerInitializer implements WebApplicationInitializer 
         servletContext.addListener(new ContextLoaderListener(webContext));
     }
     
-    public WebApplicationContext createWebAplicationContext(Class... configClasses) {
+    public WebApplicationContext createWebAplicationContext(Class configClasses) {
         AnnotationConfigWebApplicationContext context;
         context = new AnnotationConfigWebApplicationContext();
         context.getEnvironment().setActiveProfiles("production");
         context.register(configClasses);
+//        context.scan(configClasses.getPackage().getName());
         return context;
     }
 }
