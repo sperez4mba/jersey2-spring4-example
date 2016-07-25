@@ -17,6 +17,8 @@ import com.underdog.jersey.spring.impl.service.UnderdogHeaderService;
 @Component
 @Configuration
 @ComponentScan(basePackages = {
+        "com.underdog.jersey.spring.impl.filter",
+        "com.underdog.jersey.spring.impl.json",
         "com.underdog.jersey.spring.impl.service",
         "com.underdog.jersey.spring.impl.resource"
 })

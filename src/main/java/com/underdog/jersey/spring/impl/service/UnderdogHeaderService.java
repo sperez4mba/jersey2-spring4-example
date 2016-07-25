@@ -9,14 +9,14 @@ package com.underdog.jersey.spring.impl.service;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import com.underdog.jersey.spring.api.service.HeaderService;
 
 /**
  *
  * @author PaulSamsotha
  */
-@Component
+@Service
 @Profile("production")
 public class UnderdogHeaderService implements HeaderService {
 
