@@ -16,6 +16,7 @@
         <slf4j.version>1.7.21</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.7.3</jackson.version>
+        <hibernate-validator.version>5.2.4.Final</hibernate-validator.version>
     </properties>
 
 
@@ -89,6 +90,7 @@
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-aop</artifactId>
                 </exclusion>
+                <!-- Need otherwise exclusion won't work -->
                 <exclusion>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-context</artifactId>
@@ -96,6 +98,11 @@
                 <exclusion>
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-web</artifactId>
+                </exclusion>
+                <!-- repackages bean validator 5.1.2.Final -->
+                <exclusion>
+                    <groupId>org.glassfish.hk2.external</groupId>
+                    <artifactId>bean-validator</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -112,6 +119,12 @@
             <groupId>com.fasterxml.jackson.jaxrs</groupId>
             <artifactId>jackson-jaxrs-base</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate-validator.version}</version>
         </dependency>
 
         <dependency>

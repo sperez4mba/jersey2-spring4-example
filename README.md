@@ -31,6 +31,7 @@ Improvements are :
 * Logging
 * Declared constant where possible
 * Jackson 2.7.3 (jersey imports 2.5.4)
+* Method validation (note that HK2 imports an older repackaged version)
 
 **Required:** Maven (to build)
 
@@ -82,4 +83,18 @@ This is not required, but I prefer it in development, rather than deploying to l
           "name" : "Peeskillet"
         }
         
-5.         
+5. Run cURL command to test without param
+
+    curl -i http://localhost:8080/rest/greeting?name=Peeskillet
+    
+    **Result**
+    
+        HTTP/1.1 400 Bad Request
+        Server: Apache-Coyote/1.1
+        X-Powered-By: Underdog
+        Content-Type: text/plain
+        Content-Length: 394
+        Date: Mon, 25 Jul 2016 22:38:25 GMT
+        Connection: close
+        
+        HV000151: A method overriding another method must not alter the parameter constraint configuration, but method public javax.ws.rs.core.Response com.underdog.jersey.spring.impl.resource.GreetingResourceImpl.getGreeting(java.lang.String) changes the configuration of public abstract javax.ws.rs.core.Response com.underdog.jersey.spring.api.resource.GreetingResource.getGreeting(java.lang.String).     
