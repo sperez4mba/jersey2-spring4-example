@@ -5,12 +5,17 @@
  */
 package com.underdog.jersey.spring.impl.json;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonRootName;
 
-@XmlRootElement(name = "model")
-@XmlAccessorType(XmlAccessType.FIELD)
+@JsonRootName("model")
 public class Model {
-    public String name;
+    @JsonProperty("name")
+    public final String name;
+
+    @JsonCreator
+    public Model(@JsonProperty("name") String name) {
+        this.name = name;
+    }
 }

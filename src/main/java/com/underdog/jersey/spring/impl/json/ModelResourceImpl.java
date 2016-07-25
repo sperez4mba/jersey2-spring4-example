@@ -5,20 +5,16 @@
  */
 package com.underdog.jersey.spring.impl.json;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import org.springframework.stereotype.Service;
+import com.underdog.jersey.spring.api.resource.ModelResource;
 
-@Path("/model")
-public class ModelResource {
+@Service
+public class ModelResourceImpl implements ModelResource {
     
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Override
     public Response getResponse() {
-        Model model = new Model();
-        model.name = "Peeskillet";
+        Model model = new Model("Peeskillet");
         return Response.ok(model).build();
     }
 }
