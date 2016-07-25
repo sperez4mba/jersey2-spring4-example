@@ -25,11 +25,12 @@ The original tet still apply :
 Improvements are :
 
 * Java 1.8
-* Spring 4.3.x
+* Spring 4.3.x (jersey imports 3.x)
 * Split interface / implementation
-* Controlled ResourceConfig initialization (which resources, which filter in specific order)
+* Controlled `ResourceConfig` initialization (which resources, which filter in specific order)
 * Logging
 * Declared constant where possible
+* Jackson 2.7.3 (jersey imports 2.5.4)
 
 **Required:** Maven (to build)
 
