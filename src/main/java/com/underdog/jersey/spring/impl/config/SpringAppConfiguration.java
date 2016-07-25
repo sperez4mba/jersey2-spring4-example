@@ -10,10 +10,6 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.underdog.jersey.spring.api.service.HeaderService;
 import com.underdog.jersey.spring.impl.service.UnderdogHeaderService;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Component
 @Configuration
 @ComponentScan(basePackages = {

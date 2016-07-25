@@ -11,10 +11,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Path("/model")
 public class ModelResource {
     

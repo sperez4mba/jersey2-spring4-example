@@ -14,9 +14,6 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import com.underdog.jersey.spring.impl.config.JerseyAppConfiguration;
 import com.underdog.jersey.spring.impl.config.SpringAppConfiguration;
 
-/**
- * @author PaulSamsotha
- */
 public class GreetingResourceIntegrationTest extends JerseyTest {
 
     @Override

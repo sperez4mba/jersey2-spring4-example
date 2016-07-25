@@ -11,9 +11,6 @@ import com.underdog.jersey.spring.api.resource.GreetingResource;
 import com.underdog.jersey.spring.impl.filter.RandomHeaderFilter;
 import com.underdog.jersey.spring.impl.json.ObjectMapperContextResolver;
 
-/**
- * @author PaulSamsotha
- */
 @ApplicationPath("/rest")
 public class JerseyAppConfiguration extends ResourceConfig {
 

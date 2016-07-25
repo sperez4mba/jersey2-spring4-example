@@ -12,10 +12,6 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class SpringWebContainerInitializer implements WebApplicationInitializer {
 

@@ -4,10 +4,6 @@ package com.underdog.jersey.spring.impl.service;
 import org.springframework.stereotype.Service;
 import com.underdog.jersey.spring.api.service.GreetingService;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Service
 public class FrenchGreetingService implements GreetingService {
 

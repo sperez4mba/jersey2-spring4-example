@@ -7,9 +7,6 @@ import org.springframework.stereotype.Component;
 import com.underdog.jersey.spring.api.resource.GreetingResource;
 import com.underdog.jersey.spring.api.service.GreetingService;
 
-/**
- * @author PaulSamsotha
- */
 @Component
 public class GreetingResourceImpl implements GreetingResource {
 

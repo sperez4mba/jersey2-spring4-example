@@ -8,10 +8,6 @@ package com.underdog.jersey.spring.api.service;
 
 import java.util.Map;
 
-/**
- *
- * @author PaulSamsotha
- */
 public interface HeaderService {
     Map<String, String> getHeaders();
 }

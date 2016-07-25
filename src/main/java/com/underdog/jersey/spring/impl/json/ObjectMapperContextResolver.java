@@ -5,16 +5,12 @@
  */
 package com.underdog.jersey.spring.impl.json;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.ws.rs.ext.ContextResolver;
 import javax.ws.rs.ext.Provider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Provider
 @Component
 public class ObjectMapperContextResolver implements ContextResolver<ObjectMapper> {

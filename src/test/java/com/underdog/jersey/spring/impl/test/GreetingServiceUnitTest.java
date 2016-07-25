@@ -10,10 +10,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.underdog.jersey.spring.api.service.GreetingService;
 import com.underdog.jersey.spring.impl.config.SpringAppConfiguration;
 
-/**
- *
- * @author PaulSamsotha
- */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {SpringAppConfiguration.class})
 public class GreetingServiceUnitTest {

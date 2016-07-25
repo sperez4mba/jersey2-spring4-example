@@ -12,10 +12,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import com.underdog.jersey.spring.api.service.HeaderService;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Service
 @Profile("production")
 public class UnderdogHeaderService implements HeaderService {

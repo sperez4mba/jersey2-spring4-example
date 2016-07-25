@@ -16,10 +16,6 @@ import com.underdog.jersey.spring.api.resource.GreetingResource;
 import com.underdog.jersey.spring.api.service.GreetingService;
 import com.underdog.jersey.spring.impl.resource.GreetingResourceImpl;
 
-/**
- *
- * @author PaulSamsotha
- */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 public class GreetingResourceUnitTest {

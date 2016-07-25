@@ -11,10 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import com.underdog.jersey.spring.api.service.HeaderService;
 
-/**
- *
- * @author PaulSamsotha
- */
 @Provider
 @Component
 public class RandomHeaderFilter implements ContainerResponseFilter {
