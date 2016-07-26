@@ -5,7 +5,7 @@ a lot to go a bit further in integrating Spring and Jersey. Unfortunately the pr
 based on Spring 3, and doesn't allow a precise control of JAX-RS filter, resources 
 registration. This fork intends to remedies to that. 
 
-The original tet still apply : 
+Yet the original text still apply : 
 
 > There are Jersey - Spring integrated examples out there using `web.xml` configuration,
 > but I haven't found many that used all Java configurations. It may be due to the fact
