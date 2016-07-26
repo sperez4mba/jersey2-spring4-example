@@ -85,7 +85,7 @@ This is not required, but I prefer it in development, rather than deploying to l
         
 5. Run cURL command to test without param
 
-    curl -i http://localhost:8080/rest/greeting?name=Peeskillet
+        curl -i http://localhost:8080/rest/greeting?name=Peeskillet
     
     **Result**
     
